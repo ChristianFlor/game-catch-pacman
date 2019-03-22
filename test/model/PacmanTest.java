@@ -14,7 +14,19 @@ class PacmanTest {
 		
 		setUpScenary3();
 		
-		pm = new Pacman(30,0, 0,'v',1,20,1,true,500,500);
+		double radius=30;
+		double posX=0;
+		double posY=0;
+		char direction='v';
+		int subDirection=1;
+		long wait=20;
+		int bounces=1;
+		boolean moving=true;
+		double limitX=500;
+		double limitY=500;
+		
+		
+		pm = new Pacman(radius,posX,posY,direction, subDirection, wait,bounces,moving,limitX,limitY);
 		
 		assertNotNull("The Object is null", pm != null);
 		
@@ -28,9 +40,18 @@ class PacmanTest {
 	public void testPacman(){
 		
 		setUpScenary3();
-		
+		double radius=50;
+		double posX=88;
+		double posY=44;
+		char direction='h';
+		int subDirection=8;
+		long wait=50;
+		int bounces=4;
+		boolean moving=false;
+		double limitX=200;
+		double limitY=600;
 		try {
-			pm = new Pacman(0, 0, 25,'v',1,20,1,true,500,500);
+			pm = new Pacman(radius,posX,posY,direction, subDirection, wait,bounces,moving,limitX,limitY);
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
