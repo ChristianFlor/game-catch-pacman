@@ -1,0 +1,7 @@
+#level
+2
+#radius posX posY wait-time direction bounces is-moving
+30.0 82.0 82.0 20 RIGHT 16 true
+25.0 255.0 92.0 20 UP 19 true
+20.0 302.0 240.0 15 RIGHT 16 true
+15.0 25.0 197.0 15 DOWN 14 true
