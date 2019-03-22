@@ -13,7 +13,9 @@ class ScoreTest {
 		
 		setUpScenary2();
 		try {
-			score = new Score("julio",10);
+			String name= "julio";
+			int bounce= 10;
+			score = new Score(name,bounce);
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
@@ -25,7 +27,9 @@ class ScoreTest {
 		
 		setUpScenary2();
 		
-		score = new Score("andres",8);
+		String name= "andres";
+		int bounce= 8;
+		score = new Score(name,bounce);
 		
 		assertNotNull("The Object is null", score != null);
 		
