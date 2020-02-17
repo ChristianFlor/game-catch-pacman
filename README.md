@@ -1,4 +1,5 @@
 # game-catch-pacman
+Laboratory 3 - Algorithms and Programming II
 ## Overview
   ![Overview](overview/MainView1.PNG?raw=true) 
   
